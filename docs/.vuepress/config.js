@@ -20,6 +20,7 @@ module.exports = {
         sidebar: [
             {
                 title: 'Basic',
+                collapsable: false,
                 children: [
                     ['/Basic/', '基础简介'],
                     ['/Basic/1.Inline', '行内标识'],
@@ -30,12 +31,14 @@ module.exports = {
             },
             {
                 title: 'Advance',
+                collapsable: false,
                 children: [
                     ['/Advance/', '进阶特性'],
                 ]
             },
             {
                 title: 'Function',
+                collapsable: false,
                 children: [
                     ['/Function/', '函数特性'],
                 ]
