@@ -23,8 +23,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     ['/Basic/', '基础简介'],
-                    ['/Basic/1.Inline', '行内标识'],
-                    ['/Basic/2.Single', '单行标识'],
+                    ['/Basic/TextMode', '行内标识'],
+                    ['/Basic/Title', '单行标识'],
                     ['/Basic/3.Block', '多行标识'],
                     ['/Basic/4.Recommand', '推荐范式'],
                 ]
@@ -34,13 +34,17 @@ module.exports = {
                 collapsable: false,
                 children: [
                     ['/Advance/', '进阶特性'],
+                    ['/Advance/Realign', '重整化对齐'],
+                    ['/Advance/Alternative', '备选特性'],
                 ]
             },
             {
-                title: 'Function',
+                title: 'Commands',
                 collapsable: false,
                 children: [
-                    ['/Function/', '函数特性'],
+                    ['/Commands/', '指令'],
+                    ['/Commands/TextBlocks', '特殊文本块'],
+                    ['/Commands/Media', '富媒体'],
                 ]
             },
         ]
