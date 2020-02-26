@@ -1,27 +1,97 @@
-$accentColor = #38761D //Bilbao
-$textColor = #2c3e50
-$borderColor = #eaecef
-$codeBgColor = #282c34
-// 代码库重置
-.content pre{ margin: 0!important;}
 
+$textColor = #2c3e50;
+$borderColor = #eaecef;
+$codeBgColor = #282c34;
+$contentWidth = 64rem /* 1024/16 */;
 
-h2 {
-    font-size: 2 rem;
-    color: #38761D;
+pre, code {
+    font-family: 'Fira Code', Helvetica, Tahoma, Arial, STXihei, '华文细黑', 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', Heiti, '黑体', sans-serif;
+    // margin: 0 !important;
 }
 
-h3 {
-    font-size: 1.2 rem;
-    margin-top: 0 px;
-    padding-top: 10 px;
-    padding-bottom: 0 px;
+.content {
+    font-family: Helvetica, Tahoma, Arial, STXihei, '华文细黑', 'Microsoft YaHei', '微软雅黑', SimSun, '宋体', Heiti, '黑体', sans-serif;
+}
+
+table {
+    width: 100%;
+    display: inline-table;
 }
 
 h4 {
     color: #6196CC;
-    font-size: 14 px;
-    margin-top: 0 px;
-    padding-top: 10 px;
-    padding-bottom: 10 px;
+}
+
+blockquote {
+    margin: 2em 0;
+    padding: 0.625rem 1.25rem;
+    position: relative;
+    color: rgba(#34495e, 0.8);
+    background-color: rgba(192, 91, 77, 0.05);
+    border-left: 0.1875rem solid rgba(192, 91, 77, 0.3);
+    box-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.125);
+
+    p {
+        margin: 0;
+    }
+
+    &.fancyquote:before {
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: -0.90625rem;
+        margin-top: -0.75rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;
+        background-size: 1rem 1rem;
+        background-position: 0.25rem 0.25rem;
+        background-repeat: no-repeat;
+    }
+
+    &.fancyquote {
+        position: relative;
+
+        &.info {
+            border-color: #209cee;
+            background-color: #def0fd;
+        }
+
+        &.info:before {
+            background-color: #209cee;
+            background-image: url('/img/info.svg');
+        }
+
+        &.success {
+            border-color: #23d160;
+            background-color: #cbf6da;
+        }
+
+        &.success:before {
+            background-color: #23d160;
+            background-image: url('/img/success.svg');
+        }
+
+        &.warning {
+            border-color: #ffdd57;
+            background-color: #fff6d1;
+        }
+
+        &.warning:before {
+            background-color: #ffdd57;
+            background-image: url('/img/warning.svg');
+        }
+
+        &.danger {
+            border-color: #ff3860;
+            background-color: #ffb3c2;
+        }
+
+        &.danger:before {
+            background-color: #ff3860;
+            background-image: url('/img/danger.svg');
+        }
+    }
 }
