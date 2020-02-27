@@ -53,5 +53,29 @@ module.exports = {
     markdown: {
         config: md => {
         }
-    }
+    },
+    plugins: [
+        'vuepress-plugin-smooth-scroll',
+        'vuepress-plugin-nprogress',
+        [
+            'vuepress-plugin-mathjax',
+            {
+                target: 'chtml',
+                macros: {
+                    '*': '\\times',
+                },
+            },
+        ],
+        [
+            'vuepress-plugin-zooming',
+            {
+                selector: '.my-wrapper .my-img',
+                delay: 1000,
+                options: {
+                    bgColor: 'black',
+                    zIndex: 10000,
+                },
+            },
+        ],
+    ],
 };
