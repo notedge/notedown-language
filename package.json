@@ -1,7 +1,9 @@
 {
     "scripts": {
-        "push": "git push -f",
-        "dev": "vuepress dev docs",
+        "reset": "git reset Head~ --soft",
+        "start": "vuepress dev docs",
+        "update": "yarn upgrade-interactive --latest",
+        "test": "yarn install && yarn start",
         "build": "vuepress build docs",
         "deploy": "vuepress build docs"
     },

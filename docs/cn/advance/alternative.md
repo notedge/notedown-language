@@ -23,11 +23,11 @@
 
 ### Emoji
 
-`:` 然后自动输入
-
 - **Markdown**: `:tada: :100: :-( :") </3 <3 x-) :/ :'( :amphora: :alien: :D ,:( :*`
 - **Notedown**: Unsupport!
 - **Result**:
+
+Unicode 发明出来干嘛的, 按 `:` 然后自动输入
 
 ### Arrow
 
@@ -35,7 +35,7 @@
 - **Notedown**: Unsupport!
 - **Result**: → ← ↔ ⇒ ⇐ ⇔
 
-为什么不试试神奇的连字(ligature)
+与其用这个, 为什么不试试神奇的连字(ligature)呢?
 
 ## Reference
 
@@ -54,7 +54,7 @@ Here is a footnote reference,[^1] and another.[^longnote]
 ```notedown
 Here is a footnote reference, \ref[1] and another. \ref[longnote]
 
-\def[1]: Here is the footnote.
+\tag[1]: Here is the footnote.
 
-\def[longnote]: Here's one with multiple blocks.
+\tag[longnote]: Here's one with multiple blocks.
 ```
