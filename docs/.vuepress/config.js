@@ -9,33 +9,40 @@ const locale_cn = {
         }
     },
     sidebar: {
-        "/cn/basic/": [
+        "/cn/": [
             {
                 title: '基本功能',
-                collapsable: true,
+                collapsable: false,
                 children: [
-                    ['', '概述'],
+                    ['basic/', '概述'],
+                    ['basic/single-line', '单行模式'],
+                    ['basic/text-mode', '文本模式'],
+                    ['basic/block-mode', '区块模式'],
+                    ['basic/recommend', '推荐范式'],
                 ]
             },
-        ],
-        "/cn/advance/": [
             {
                 title: '进阶功能',
-                collapsable: true,
+                collapsable: false,
                 children: [
-                    ['', '概述'],
+                    ['advance/', '概述'],
+                    ['advance/style', '格式'],
+                    ['advance/alternative', '改进策略'],
+                    ['advance/realign', '重对齐策略'],
+                    ['advance/shortcomings', '缺陷与改进'],
+                ]
+            },
+            {
+                title: '指令一览',
+                collapsable: false,
+                children: [
+                    ['commands/', 'Overview'],
+                    ['commands/io', 'IO'],
+                    ['commands/media', 'Media'],
+                    ['commands/fancy-blocks', 'Fancy Blocks'],
                 ]
             },
         ],
-        "/cn/commands/": [
-            {
-                title: 'Commands',
-                collapsable: true,
-                children: [
-                    ['', 'Commands'],
-                ]
-            },
-        ]
     }
 }
 
@@ -51,12 +58,12 @@ const locale_en = {
         }
     },
     sidebar: {
-        "/en/commands/": [
+        "/en/": [
             {
                 title: 'Commands',
-                collapsable: true,
+                collapsable: false,
                 children: [
-                    ['', 'Commands'],
+                    ['commands/', 'Commands'],
                 ]
             },
         ]
