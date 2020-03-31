@@ -1,12 +1,12 @@
 {
     "scripts": {
+        "push": "git push -f",
         "dev": "vuepress dev docs",
         "build": "vuepress build docs",
         "deploy": "vuepress build docs"
     },
     "dependencies": {
-        "vue-aplayer": "^1.6.1",
-        "vuepress": "^1.3.1",
+        "vuepress": "^1.4.0",
         "vuepress-plugin-mathjax": "^1.2.8",
         "vuepress-plugin-nprogress": "^1.1.6",
         "vuepress-plugin-smooth-scroll": "^0.0.9",
